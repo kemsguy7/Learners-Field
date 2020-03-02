@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Learners Field</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" href="owl.carousel.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+<!--Font awesome-->
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     
+   <style> 
+   *{
+     margin:0;
+     padding:0;
+   }
+   body{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: #f2f2f2;
+   }
+     .navbar-default{
+         background-color:#5cdb95;
+         box-shadow: 4px 5px 16px -2px rgba(0,0,0,0.3);
+     }
+     #carousel {
+
+margin-top: 50px;
+
+}
+.carousel {
+height: 500px;
+margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+width: 100%;
+height: 500px;
+background-color: #777;
+}
+.carousel-inner > .item > img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+height: 500px;
+}
+
+@media (min-width: 768px) {
+.carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+}
+}
+
+#owl-carousel{
+background: #009fdc;
+font-family: poppins;
+}
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+.section-padding{
+  padding:60px;
+}
+.testimonial-carousel{
+  margin: 5% auto 0;
+}
+.img-area{
+  width: 120px;
+  height: 120px;
+  display: block;
+  overflow:hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.img-area img {
+   width: 100%;
+}
+.single-testi{
+  display:flex;
+  width: 300px;
+  background: #fff;
+  padding: 10%;
+  text-align: center;
+  border-radius: 100px 0 100px 0;
+}
+.img-text h2{
+  text-transform: uppercase;
+  margin: 20px 0 -15px;
+  color: #ff5257;
+}
+.img-text i{
+  color: #ff5257;
+}
+hr{
+  color: #ff5257; 
+}
+.owl-dot{
+    display:inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #fff;
+    opacity: 0.8; 
+    border-radius: 50%;
+    margin: 50px 5px 0;
+    }
+    .owl-dot.active{
+     background-color: #ff5257 !important; 
+    }
+img {
+background: red;
+width:100%;
+
+}
+img:hover{
+webkit-transform: rotate(5deg) scale(1.15);
+transform:rotate(5deg) scale(1.15);
+transition-timing-function: ease-in;
+duration:750ms;
+}
+.cont1{
+  background-color: green;
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
+
+}
+.col-md-4{
+  border-right: 1px solid white;
+  text-align: center;
+  display: flex;
+}
+
+.pb3, .py-3 {
+  padding-bottom: 1rem!important;
+}
+
+.pt-3, .py-3 {
+  padding-top: 1rem!important;
+}
+.key-features {
+  width: 270px;
+  height:270px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  flex-flow:column;
+  margin: 2rem auto;
+  color:#999;
+  box-shadow: 2px 2px 16px -2px rgba(150,150,150,0.7);
+}
+.key-feature-title{
+padding-top:20px;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.key-feature-content{
+  padding-top: 40%;
+
+  padding-bottom: 50%;
+   width:100%;
+   display:flex;
+   justify-content: center;
+   align:center;
+}
+.text-info{
+  color:  #ff5257;
+}
+#footer{
+  background-color: grey;
+}
+  </style>
+  </head>
+  <body>
+      
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Learners Field</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Admissions</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Staff Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+<!-- Carousel section begins here-->
+<div id="my_carousel" class="carousel slide carousel-1">
+
+  <ol class="carousel-indicators">
+    <li data-target = "#my_carousel" data-slide-to = "0" class="active"></li>
+    <li data-target = "#my_carousel" data-slide-to = "1"></li>
+    <li data-target = "#my_carousel" data-slide-to = "2"></li>
+  </ol>
+
+  <div class="carousel-inner i">
+
+    <div class="item active">
+           <img src="img1.jpg" alt = "An image" class="img-responsive">
+       <div class="carousel-caption">
+              <h2>Learners Field</h2>
+       </div>
+    </div>
+
+    <div class="item">
+         <img src="img5.jpg" alt = "An image" class="img-responsive">
+          <div class="carousel-caption">
+               <h2>Learners Field</h2>
+          </div>
+    </div>
+
+    <div class="item">
+          <img src="img8.jpg" alt = "An image" class="img-responsive">
+          <div class="carousel-caption">
+               <h2>Learners Field</h2>
+          </div>
+          
+    </div>
+
+  </div>
+<!-- Carousel controls-->
+  <a class="carousel-control left" href="#my_carousel" data-slide = "prev">
+     <span class="icon-prev left"></span>
+  </a>
+
+  <a class="carousel-control right" href="#my_carousel" data-slide = "next">
+     <span class="icon-next right"></span>
+  </a>
+
+ 
+</div><!--End of carousel-->
+
+
+
+
+
+
+<section id="welcome-sect" class="py-3">
+  <div class="container"> 
+  <div class="mx-3 px-2 d-flex flex-column justify-content-center">
+  <div class="row mt-3 mb-5 text-center">
+  <div class="offset-md-2 col col-md-8">
+  <h5 class="h1 text-center" >
+  <b> Learners Field</b>
+  </h5>
+  <h4 class="text-muted text-info text-center">
+  Discover it!...
+  
+  </h4>
+  </div>
+  </div>
+  <div class="d-block d-md-none d-lg-flex col-12 px-0">
+  <div class="col-md-6 col-lg-3  ml-md-0 px-0">
+  <div class="key-features bg-white text-primary">
+  
+  <span class="key-feature-title  text-info">
+  Our Vision
+  </span>
+  <span class="key-feature-content text-center">
+  To educate and empower for global relevance.
+  </span>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3  ml-md-0 px-0">
+  <div class="key-features bg-white text-primary">
+  <span class="key-feature-title text-info">
+  Our Culture
+  </span>
+  <span class="key-feature-content text-center ">
+  Passion for Excellence
+  </span>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3  ml-md-0 px-0">
+  <div class="key-features bg-white text-primary ">
+  
+  <span class="key-feature-title  text-info">
+  Our Motto
+  </span>
+  <span class="key-feature-content text-center ">
+  To nurture for Service.
+  </span>
+  </div>
+  </div>
+  <div class="col-md-6 col-lg-3  ml-md-0 px-0">
+  <div class="key-features bg-white text-primary ">
+  
+  <span class="key-feature-title  text-info">
+  Our Mission
+  </span>
+  <span class="key-feature-content text-center ">
+   To provide Total Quality Education (TQE).
+  </span>
+  </div>
+  </div>
+  </div>
+  
+  
+ 
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+  </section>
+  
+
+
+
+
+<div class="container">
+  <div class="row">
+     <div class="col-md-8">
+          <h1 class="heading"> Welcome to Learners Field</h1><br>
+         <hr style="width: 70%; height:7px; background-color:green;">
+         <p><h4> We offer Daycare, Nursery, Primary and Secondary Education</h4> </p>
+         <div class="col-md-4">
+      <p><img src="img3.JPG" alt="pics"> </p>
+         </div>
+         <div class="col-md-8">
+          <p> Learners Field international school is a school estalished with the 21st child in  mind. At Learners field, we offer quality education with qualified teachers using a high standard of british curriculum. We also encourage different talents of our pupils and students to make sure your wards achieve the best in life </p>
+         </div>
+     </div>
+     <div class="col-md-4"> 
+      <img src="img5.JPG">
+     </div>
+  </div>
+</div>
+<br><br><br>
+
+<section id="section" style="background-color: white;">  
+<div class="container">
+    <h1 class="text-center">Our Sections</h1>
+    <div class="row">
+
+
+        <div class="col-md-4">
+          <div class="thumbnail"> 
+              <img class="img-responsive img-responsive" src="pic2.JPG" alt="Ikpe annang" width="400" height="300">
+         <p>
+          <strong>Pre-Nursery Section</strong>
+         </p>
+         <p>Our Pre-Nursery Section Consists of upper and lower reception designed to give your children a strong educational foundation</p>
+          </div>
+        </div>
+          
+
+        <div class="col-md-4">
+          <div class="thumbnail"> 
+              <img class="img-responsive img-responsive" src="img7.JPG" alt="Ikpe annang" width="400" height="300">
+         <p>
+          <strong> Primary Section </strong>
+         </p>
+         <p> Our Primary Section trains pupils with the future in mind</p>
+          </div>
+        </div>
+          
+          
+
+        <div class="col-md-4">
+          <div class="thumbnail"> 
+              <img class="img-responsive img-responsive" src="img1.JPG" alt="Ikpe annang" width="400" height="300">
+         <p>
+  <strong>Secondary</strong>
+         </p>
+         <p> We teach our students with unique british and cambridge curriculum which enables students perform well in external examinations</p>
+          </div>
+        </div>
+          
+
+        
+      </div>
+    </div>
+</div>
+</section><br><br><br>
+
+<section id="fees">
+<div class="container">
+    <h1 class="text-center">Our Fees</h1>
+    <div class="row">
+    <div class="col-md-8">
+     <p><h3>Learners Field International School Fees:</h3></p>
+     <p>Our school consists of 3 sections: Pre-Nursery, Primary and Secondary with fees varying. <br/>
+      Other additional fees may include bus fee, Lesson fee and Pta.<br>
+      Below is a breakdown of our fee structure system
+     </p><br>
+
+     <div class="table table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+        <th>***</th>
+        <th>1st Term</th>
+        <th>2nd Term</th>
+        <th>3rd Term</th>
+        </thead>
+        <tbody>
+        <tr>
+        <th>Lower Reception</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        <tr>
+        <th>Upper Reception</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        <tr>
+        <th>Primary</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        <tr>
+        <th>SS1</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        <tr>
+        <th>SS2</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        <tr>
+        <th>SS3</th>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        <td>&#8358; 20,000</td>
+        </tr>
+        </tbody>
+        </table>
+     </div>
+    <button class="btn btn-success btn-lg">Read More &raquo;</button>
+    </div> <br><br>
+    <div class="col-md-4" >
+     <div class="panel" style="width:100%">
+        <div class="panel-title">
+         Fee Details
+        </div>
+        <div class="panel-body">
+         <p> Fees for our pre-primary section</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-success">Read More &raquo; </button>
+        </div>
+     </div>
+
+     
+     <div class="panel" style="width:100%">
+      <div class="panel-title">
+       Fee Details
+      </div>
+      <div class="panel-body">
+       <p> Fees for our primary section</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-success">Read More &raquo; </button>
+      </div>
+   </div>
+
+   <div class="panel" style="width:100%">
+    <div class="panel-title">
+     Fee Details
+    </div>
+    <div class="panel-body">
+     <p> Secondary Section</p>
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-success">Read More &raquo; </button>
+    </div>
+ </div>
+
+
+    
+    </div>
+
+    </div>
+</div>
+</section>
+     
+<section style="background-color: #f2f2f2;">
+  <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-7">
+        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/_JtyVSbkARs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+     
+
+      <div class="col-md-5"  style="background-color: #379653;"> 
+        
+             <div class="desc-section">
+        <div class="py-3">
+           <h1 class="text-center">Did you know that...</h1>
+        </div>
+        <div class="text-justify">
+          <p class="lead">
+            The true Meaning of LEARNERS
+          </p>
+          <ul>
+            <li><span style="font-size: 1.2em;" class="text-danger">L</span>earning</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">E</span>ducation</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">A</span>frica</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">R</span>eal</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">N</span>igeria</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">E</span>arly Childhood</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">R</span>oyal</li>
+            <li><span style="font-size: 1.2em;" class="text-danger">S</span>ervice</li> 
+          </ul>
+          <p class="lead">Learners field is an institution build to help our children discover the keys to succes. Discover it! </p>
+          <a href="#" class="btn btn-success btn-lg pull-right">Learn more...</a>
+        </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+
+<!-- 
+<section id="owl-carousel">
+<div class="container">
+  <div class="row">     
+     <div class=" col-md-12 col-sm-12">    
+      <div class="wrapper">    
+        <div class="testimonial-carousel section-padding owl-carousel">
+          <div class="single-testi">
+                <div class="img-area">
+                    <img src="img3.JPG" alt="Testimonial Image">
+                </div>
+                <div class="img-text">
+                  <h2>John Doe</h2>
+                  <h3>Software Designer</h3>
+                  <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </p>
+                  <hr>
+                  <p>Very Professional and honest. </p>
+                </div>
+          </div>
+
+          <div class="single-testi">
+            <div class="img-area">
+                <img src="img3.JPG" alt="Testimonial Image">
+            </div>
+            <div class="img-text">
+              <h2>John Doe</h2>
+              <h3>Software Designer</h3>
+              <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </p>
+              <hr>
+              <p>Very Professional and honest. </p>
+            </div>
+      </div>
+
+      <div class="single-testi">
+        <div class="img-area">
+            <img src="img3.JPG" alt="Testimonial Image">
+        </div>
+        <div class="img-text">
+          <h2>John Doe</h2>
+          <h3>Software Designer</h3>
+          <p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <hr>
+          <p>Very Professional and honest. </p>
+        </div>
+    </div>
+
+
+    <div class="single-testi">
+      <div class="img-area">
+          <img src="img3.JPG" alt="Testimonial Image">
+      </div>
+      <div class="img-text">
+        <h2>John Doe</h2>
+        <h3>Software Designer</h3>
+        <p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </p>
+        <p>Very Professional and honest. </p>
+      </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+</div>
+</div>  
+
+</section>-->
+
+<section id="principal">
+    <div class="container">
+        <div class="row">
+          <h1 class="text-center">From the Proprietor</h1>
+            <div class="col-md-9">
+             <p class="text-info"><h3>The Proprietor's Welcome Address </h3> </p>
+             <p>Welcome to Learners field international school, the school with a difference. At learners we train your wards differently and in a unique way which is evident in hte british standard curriculum, the sports academy, skill classes e.t.c. <br>
+            Education is the bedrock of our bation and the best gift parents can give to their children hence, we leave no stone unturned in making sure your wards acquire all the knowledge need to survive in today's 21st century.
+          </p>
+          <p>Discipline is our watchword, hence we have have well trained and qualified teachers who are able to impact positively in the life of your wards</p>
+          <p> We also attach utmost priority to individual talents which is evident in our slogan <span class="text-danger">Discover it!.</span> We have helped many of our past students and pupils to achieve their worth. </p>
+          <p>Are you still in doubt? Send your wards to Learners field international school today and you would be proud you made one of the best decisions in your life!</p>
+          <p>Once again, Welcome.</p><br><br/>
+            <p><b>FELIX S UDOM<br>
+            Proprietor, Learners Field</b></p>
+        
+            </div>
+            <div class="col-md-3">
+               <img src="felix.jpg" alt="The proprietor">
+            </div>
+        </div>
+    </div>
+</section><br><br>
+<section id="Map">
+<div class="container-fluid">
+   <div class="Map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.5987642614896!2d7.771789314008683!3d5.006107996366062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1068001b2bc2a219%3A0xde5f819f07d3df55!2sAtai%20Otoro%2C%20Abak!5e0!3m2!1sen!2sng!4v1583069002075!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>"
+   </div>
+</div>
+</section><br><br><br>
+<section id="footer"> 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <p>copyright&copy; Learners Field 2020</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+
+  $(document).ready (function() {
+  $('.carousel').carousel({
+    interval: 4000
+  })
+  });   
+</script>
+
+<script> /*
+(function($) {
+$('.testimonial-carousel').owl-carousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+})
+;*/
+</script>
+<script src="jquery-3.4.1.min.js"> </script>
+<script src="bootstrap.min.js"></script>
+<script src="owl.carousel.js"></script>
+<script src="owl.carousel.min.js"></script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
